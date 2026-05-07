@@ -30,7 +30,11 @@ export default function PropertyCard({
       onPress={() => router.push(`/(root)/property/${property.id}`)}
     >
       <Image
-        source={{ uri: property?.images[0] }}
+        source={
+          property.images.length > 0
+            ? { uri: property.images[0] }
+            : require("@/assets/images/placeholder.png")
+        }
         className="w-28 h-28"
         resizeMode="cover"
       />
