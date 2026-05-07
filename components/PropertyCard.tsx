@@ -33,7 +33,7 @@ export default function PropertyCard({
         source={
           property.images.length > 0
             ? { uri: property.images[0] }
-            : require("@/assets/images/placeholder.png")
+            : require("../assets/images/kribb.png")
         }
         className="w-28 h-28"
         resizeMode="cover"

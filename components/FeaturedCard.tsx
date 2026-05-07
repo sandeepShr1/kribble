@@ -25,7 +25,7 @@ export default function FeaturedCard({ property }: { property: Property }) {
         source={
           property.images.length > 0
             ? { uri: property.images[0] }
-            : require("@/assets/images/placeholder.png")
+            : require("../assets/images/kribb.png")
         }
         className="w-full h-44"
         resizeMode="cover"
